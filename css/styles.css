@@ -1,0 +1,83 @@
+:root {
+    --text-color-light: #ffffff;
+    --text-color-dark: #707070;
+    --text-btn-color-dark: #1e1e1e;
+    --button-bg-color: #f9c06a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PlayfairDisplay', serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    max-width: 1210px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.logo {
+    font-family: ClickerScript, serif;
+    font-size: 35px;
+}
+
+/* ****** Header ****** */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header a {
+    color: var(--text-color-light);
+}
+.header-wrapper {
+    padding: 21px 0;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-menu {
+    display: flex;
+    column-gap: 60px;
+}
+.header-menu a {
+    font-size: 14px;
+    font-weight: 500;
+}
+.header-auth {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}
+.header-auth a {
+    font-size: 14px;
+    font-weight: 500;
+}
+.header-auth .in {
+    text-decoration: underline;
+}
+.header-auth .up {
+    background-color: var(--button-bg-color);
+    padding: 14px 27px;
+    border-radius: 24px;
+    color: var(--text-btn-color-dark);
+}
+/* ****** Hero ****** */
+.hero {
+    background: url('../images/hero_bg.jpg');
+    min-height: 768px;
+}
