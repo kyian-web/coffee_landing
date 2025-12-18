@@ -3,6 +3,7 @@
     --text-color-dark: #707070;
     --text-btn-color-dark: #1e1e1e;
     --button-bg-color: #f9c06a;
+    --button-bg-color-hover: #dc9f45;
 }
 
 * {
@@ -20,6 +21,26 @@ li {
 }
 a {
     text-decoration: none;
+}
+button {
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button {
+    background-color: var(--button-bg-color);
+    padding: 14px 27px;
+    border-radius: 24px;
+    color: var(--text-btn-color-dark);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s all;
+}
+.button:hover {
+    box-shadow: inset 0 0 4px #000;
+    color: var(--text-color-light);
+    background-color: var(--button-bg-color-hover);
 }
 .container {
     width: 100%;
@@ -49,6 +70,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 20px;
 }
 .header-menu {
     display: flex;
@@ -58,26 +80,44 @@ a {
     font-size: 14px;
     font-weight: 500;
 }
+.header-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s all;
+}
+.header-menu a:hover:after {
+    width: 100%;
+}
 .header-auth {
     display: flex;
     align-items: center;
     column-gap: 35px;
 }
-.header-auth a {
-    font-size: 14px;
-    font-weight: 500;
-}
 .header-auth .in {
-    text-decoration: underline;
-}
-.header-auth .up {
-    background-color: var(--button-bg-color);
-    padding: 14px 27px;
-    border-radius: 24px;
-    color: var(--text-btn-color-dark);
+    color: var(--text-color-light);
 }
 /* ****** Hero ****** */
 .hero {
-    background: url('../images/hero_bg.jpg');
+    background: url('../images/hero_bg.jpg') center / cover no-repeat;
     min-height: 768px;
+    padding: 183px 0 95px;
+    color: var(--text-color-light);
+}
+.hero-wrapper {
+    max-width: 530px;
+}
+.hero-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+.hero-title span {
+    display: block;
+    font-family: ClickerScript;
+    font-size: 220px;
+}
+.hero-text {
+    margin-bottom: 20px;
 }
