@@ -1,0 +1,44 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &__wrapper {
+        padding: 21px 0;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+    }
+    &__menu {
+        display: flex;
+        column-gap: 60px;
+    }
+    &__link a {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-color-light);
+    }
+    &__menu a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: 0.3s all;
+    }
+    &__menu a:hover:after {
+        width: 100%;
+    }
+    &__auth {
+        display: flex;
+        align-items: center;
+        column-gap: 35px;
+    }
+    &__auth .in {
+        color: var(--text-color-light);
+    }
+}

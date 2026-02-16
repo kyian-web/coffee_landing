@@ -1,0 +1,22 @@
+.hero {
+    background: url("../images/hero_bg.jpg") center / cover no-repeat;
+    min-height: 768px;
+    padding: 183px 0 95px;
+    color: var(--text-color-light);
+
+    &__wrapper {
+        max-width: 530px;
+    }
+    &__title {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    &__title span {
+        display: block;
+        font-family: ClickerScript;
+        font-size: 220px;
+    }
+    &__text {
+        margin-bottom: 20px;
+    }
+}
