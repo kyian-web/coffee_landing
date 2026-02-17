@@ -1,0 +1,35 @@
+.advantages {
+    padding-top: 110px;
+    text-align: center;
+    &__title {
+        margin-bottom: 16px;
+    }
+    &__subtitle {
+        margin-bottom: 32px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        padding: 36px 16px;
+        flex-basis: 280px;
+        min-height: 284px;
+        background-color: var(--card-bg-color);
+        border: 1px solid rgba($color: $button-bg-color, $alpha: 0.42);
+        transition: 0.2s all;
+
+        &:hover {
+            background-color: var(--card-advantages-bg-color);
+        }
+        &-icon {
+            margin: 0 auto 25px;
+        }
+        &-title {
+            font-size: 28px;
+            line-height: 1;
+            color: var(--text-section-title);
+            margin-bottom: 8px;
+        }
+    }
+}
