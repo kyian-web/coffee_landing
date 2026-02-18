@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Coffee</title>
         <link rel="stylesheet" href="./css/main.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+        />
     </head>
     <body>
         <header class="header">
@@ -169,9 +173,110 @@
                 <button class="started__button button">Join Us</button>
             </div>
         </section>
-        <section class="chance"></section>
-        <section class="reviews"></section>
+        <section class="chance">
+            <img class="chance__coffee_bean" src="./images/coffee_bean.png" alt="Coffee bean" />
+            <img class="chance__coffee_cup" src="./images/cup.png" alt="Cup of coffee" />
+            <div class="container">
+                <div class="chance__wrapper">
+                    <h2 class="chance__title section__title">
+                        Get a chance to have an Amazing morning
+                    </h2>
+                    <p class="chance__text">
+                        We are giving you are one time opportunity to experience a better life with
+                        coffee.
+                    </p>
+                    <button class="chance__button button">Order Now</button>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <img
+                class="reviews__coffee-img reviews__coffee-img_1"
+                src="./images/review_coffee_1.png"
+                alt="review coffee"
+            />
+            <img
+                class="reviews__coffee-img reviews__coffee-img_2"
+                src="./images/review_coffee_2.png"
+                alt="review coffee"
+            />
+            <div class="container">
+                <h2 class="reviews__title section__title">Our coffee perfection feedback</h2>
+                <p class="reviews__subtitle">Our customers has amazing things to say about us</p>
+                <div class="reviews__wrapper swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="reviews__item swiper-slide">
+                            <span class="reviews__item-mark">“</span>
+                            <div class="reviews__item-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a type specimen book. It has survived not
+                                only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s
+                                with the release of Letraset.....
+                            </div>
+                            <h3 class="reviews__item-name">Jonny Thomas</h3>
+                            <h3 class="reviews__item-skill">Project Manager</h3>
+                            <img
+                                class="reviews__item-avatar"
+                                src="./images/review_avatar.png"
+                                alt="Avatar"
+                            />
+                        </div>
+                        <div class="reviews__item swiper-slide">
+                            <span class="reviews__item-mark">“</span>
+                            <div class="reviews__item-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a type specimen book. It has survived not
+                                only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s
+                                with the release of Letraset.....
+                            </div>
+                            <h3 class="reviews__item-name">Jonny Thomas</h3>
+                            <h3 class="reviews__item-skill">Project Manager</h3>
+                            <img
+                                class="reviews__item-avatar"
+                                src="./images/review_avatar.png"
+                                alt="Avatar"
+                            />
+                        </div>
+                        <div class="reviews__item swiper-slide">
+                            <span class="reviews__item-mark">“</span>
+                            <div class="reviews__item-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a type specimen book. It has survived not
+                                only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s
+                                with the release of Letraset.....
+                            </div>
+                            <h3 class="reviews__item-name">Jonny Thomas</h3>
+                            <h3 class="reviews__item-skill">Project Manager</h3>
+                            <img
+                                class="reviews__item-avatar"
+                                src="./images/review_avatar.png"
+                                alt="Avatar"
+                            />
+                        </div>
+                    </div>
+
+                    <button class="reviews__button reviews__button-prev carousel-button prev">
+                        <img src="./images/review_arrow.png" alt="arrow" />
+                    </button>
+                    <button class="reviews__button reviews__button-next carousel-button next">
+                        <img src="./images/review_arrow.png" alt="arrow" />
+                    </button>
+                </div>
+            </div>
+        </section>
         <section class="subscribe"></section>
         <footer class="footer"></footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="./js/formats-slider.js"></script>
     </body>
 </html>

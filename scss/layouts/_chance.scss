@@ -1,0 +1,33 @@
+.chance {
+    position: relative;
+    padding: 135px 0;
+    background:
+        linear-gradient(rgba($text-section-title, 0.8), rgba($text-section-title, 0.8)),
+        url("../images/chance_bg.jpg");
+
+    &__title {
+        color: var(--text-color-light);
+    }
+    &__text {
+        color: var(--text-color-light);
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        width: 575px;
+    }
+
+    &__coffee_bean {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &__coffee_cup {
+        position: absolute;
+        right: 279px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
